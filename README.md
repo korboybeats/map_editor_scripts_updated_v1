@@ -1,4 +1,4 @@
-## R5Reloaded In-Game Level Editor Updated By korboybeats
+## mostly fireproof's R5Reloaded In-Game Level Editor updated by korboybeats
 
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
@@ -15,9 +15,6 @@ For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
 
 You can also bind other keys to other map names as well.
 
-
-
-
 ### Keybinds:
 * `X` Switch your character to Bloodhound and give you the prop tool.
 * `V` Equip the prop tool.
@@ -33,5 +30,15 @@ You can also bind other keys to other map names as well.
 * `5` Change Yaw (z).
 * `6` Change snap size.
 * `Z` Open the model menu.
+
+### Saving and loading:
+* Before you start editing, open the console
+* [To save and load, use the tool and follow the instructions here](https://github.com/mostlyfireproof/R5Edit)
+* __PLEASE SAVE FREQUENTLY__, as the game can and will crash at the worst possible time
+* To use the map when hosting, copy the `mp_rr_<map>_common.nut` somewhere else (like your desktop), install the scripts with which you will host, then copy it back in
+
+### Known Issues:
+* You can't go in to the prop menu when the zipline is equipped (unintended feature)
+* Doesn't work on KC S2 or Ash's Redemption
 
 #### Huge thanks to `mostly fireproof#2095`, `M͢1ke̵̲ͅp̴͖̙̞#9446`, and `Bogass#1210` for helping me with this.
