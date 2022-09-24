@@ -1,4 +1,4 @@
-# map_editor_v1
+# scripts_map_editor_v1
 
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
