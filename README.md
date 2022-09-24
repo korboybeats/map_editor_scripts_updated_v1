@@ -5,7 +5,7 @@
 2. Launch game in dev mode.
 3. Enter this command in console:
 
-`bind X "loadouts_devset character_selection character_bloodhound; give mp_weapon_editor; "; bind V "+offhand1" bind T "ToggleThirdPerson"; bind F "noclip"; bind E "+pushtotalk"; bind Q "+use"; bind "3" "+scriptCommand6"; bind "4" "+scriptCommand1"; bind "5" "weapon_inspect"; bind "6" "+offhand3"`
+`bind X "loadouts_devset character_selection character_bloodhound; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind E "+pushtotalk"; bind Q "+use"; bind 3 "+scriptCommand6"; bind 4 "+scriptCommand1"; bind 5 "weapon_inspect"; bind 6 "+offhand3"`
 
 ### Keybinds:
 * `X` Switch your character to Bloodhound and give you the prop tool.
