@@ -42,4 +42,4 @@ You can also bind other keys to other map names as well.
 * Doesn't work on KC S2 or Ash's Redemption
 
 #### Huge thanks to `mostly fireproof#2095`, `M͢1ke̵̲ͅp̴͖̙̞#9446`, and `Bogass#1210` for helping me with this.
-#### If you want mostly fireproof's original map editor scripts, go [here](https://github.com/mostlyfireproof/scripts_r5/tree/SalEditor)
+#### If you want fireproof's original map editor scripts, go [here](https://github.com/mostlyfireproof/scripts_r5/tree/SalEditor)
