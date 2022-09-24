@@ -9,7 +9,7 @@
 
 ### Keybinds:
 * `X` Switch your character to Bloodhound and give you the prop tool.
-* `CapsLock` Equip the prop tool.
+* `V` Equip the prop tool.
 * `T` Change perspective mode.
 * `F` Toggle noclip.
 * `MOUSE1` Place prop.
