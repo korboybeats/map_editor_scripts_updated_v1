@@ -1,4 +1,4 @@
-## mostly fireproof's Map Editor updated by korboybeats
+## mostly fireproof's Map Editor Tool updated by korboybeats
 
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
