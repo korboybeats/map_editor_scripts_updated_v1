@@ -7,6 +7,17 @@
 
 `bind X "loadouts_devset character_selection character_bloodhound; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind E "+pushtotalk"; bind Q "+use"; bind 3 "+scriptCommand6"; bind 4 "+scriptCommand1"; bind 5 "weapon_inspect"; bind 6 "+offhand3"`
 
+4. (Optional) This command is to bind F5 to refresh a map after making a change (replace 'mapname' with the actual map's name):
+
+`bind "F5" "changelevel mapname"`
+
+For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
+
+You can also bind other keys to other map names as well.
+
+
+
+
 ### Keybinds:
 * `X` Switch your character to Bloodhound and give you the prop tool.
 * `V` Equip the prop tool.
