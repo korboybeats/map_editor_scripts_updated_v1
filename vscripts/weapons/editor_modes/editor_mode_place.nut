@@ -2,6 +2,7 @@ global function EditorModePlace_Init
 
 global function ServerCallback_NextProp
 global function ServerCallback_PreviousProp
+global function ServerCallback_ResetProp
 global function ServerCallback_OpenModelMenu
 #if SERVER
 global function GetPlacedProps
@@ -77,7 +78,8 @@ EditorMode function EditorModePlace_Init()
     AddClientCommandCallback("load", ClientCommand_Load)
     AddClientCommandCallback("spawnpoint", ClientCommand_Spawnpoint)
     AddClientCommandCallback("nextprop", ClientCommand_Next)
-    AddClientCommandCallback("previousprop", ClientCommand_Previous)    
+    AddClientCommandCallback("previousprop", ClientCommand_Previous) 
+    AddClientCommandCallback("resetprop", ClientCommand_Reset)  
     AddClientCommandCallback("section", ClientCommand_Section)
     #endif
 
@@ -119,6 +121,7 @@ void function EditorModePlace_Activation(entity player)
     AddInputHint( "%weapon_inspect%", "Change Yaw (z)" )
     AddInputHint( "%scriptCommand1%", "Change Pitch (y)" )
     AddInputHint( "%scriptCommand6%", "Change Roll (x)" )
+    AddInputHint( "%reload%", "Reset Prop Positions" )
     AddInputHint( "%offhand3%", "Change Snap Size" ) // no calling in a titanfall because of this
     AddInputHint( "%offhand4%", "Open Model Menu" )
     
@@ -128,6 +131,7 @@ void function EditorModePlace_Activation(entity player)
     
     //RegisterConCommandTriggeredCallback( "+use", ServerCallback_NextProp)
     RegisterConCommandTriggeredCallback( "+pushtotalk", ServerCallback_PreviousProp)
+    RegisterConCommandTriggeredCallback( "+reload", ServerCallback_ResetProp)
 
     RegisterConCommandTriggeredCallback( "weaponSelectPrimary0", ClientCommand_UP_Client )
     RegisterConCommandTriggeredCallback( "weaponSelectPrimary1", ClientCommand_DOWN_Client )
@@ -189,6 +193,7 @@ void function EditorModePlace_Deactivation(entity player)
 
     //DeregisterConCommandTriggeredCallback( "+use", ServerCallback_NextProp)
     DeregisterConCommandTriggeredCallback( "+pushtotalk", ServerCallback_PreviousProp)
+    DeregisterConCommandTriggeredCallback( "+reload", ServerCallback_ResetProp)
 
     DeregisterConCommandTriggeredCallback( "weaponSelectPrimary0", ClientCommand_UP_Client )
     DeregisterConCommandTriggeredCallback( "weaponSelectPrimary1", ClientCommand_DOWN_Client )
@@ -313,6 +318,11 @@ void function ServerCallback_PreviousProp( entity player )
     #if SERVER
         Remote_CallFunction_Replay( player, "ServerCallback_PreviousProp", player )
     #endif
+}
+
+void function ServerCallback_ResetProp(entity player)
+{
+
 }
 
 
@@ -1007,6 +1017,12 @@ bool function ClientCommand_Next(entity player, array<string> args) {
 bool function ClientCommand_Previous(entity player, array<string> args) {
     ServerCallback_PreviousProp(player)
     //Remote_CallFunction_Replay( player, "ServerCallback_PreviousProp", player )
+    return true
+}
+
+bool function ClientCommand_Reset(entity player, array<string> args) {
+    ServerCallback_ResetProp(player)
+    //Remote_CallFunction_Replay( player, "ServerCallback_ResetProp", player )
     return true
 }
 #endif
