@@ -116,9 +116,9 @@ void function EditorModePlace_Activation(entity player)
     AddInputHint( "%pushtotalk%", "Previous Prop")
     AddInputHint( "%weaponSelectPrimary0%", "Raise" )
     AddInputHint( "%weaponSelectPrimary1%", "Lower" )
-    AddInputHint( "%scriptCommand6%", "Change Roll (x)" )
-    AddInputHint( "%scriptCommand1%", "Change Pitch (y)" )
     AddInputHint( "%weapon_inspect%", "Change Yaw (z)" )
+    AddInputHint( "%scriptCommand1%", "Change Pitch (y)" )
+    AddInputHint( "%scriptCommand6%", "Change Roll (x)" )
     AddInputHint( "%offhand3%", "Change Snap Size" ) // no calling in a titanfall because of this
     AddInputHint( "%offhand4%", "Open Model Menu" )
     
