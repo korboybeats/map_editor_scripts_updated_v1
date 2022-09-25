@@ -52,7 +52,7 @@ void function EditorModeToys_Activation(entity player)
 
     #elseif SERVER
 
-    AddButtonPressedPlayerInputCallback( player, IN_USE, ServerCallback_NextProp )
+    //AddButtonPressedPlayerInputCallback( player, IN_USE, ServerCallback_NextProp )
     //AddButtonPressedPlayerInputCallback( player, IN_USE_ALT, ServerCallback_PreviousProp )
 
     if( !(player in file.snapSizes) )

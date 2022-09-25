@@ -50,6 +50,7 @@ void function EditorModeDelete_Activation(entity player)
     AddInputHint( "%attack%", "Delete Prop" )
 
     #if CLIENT
+    
     thread EditorModeDelete_Think(player)
     #endif
 }
