@@ -16,6 +16,7 @@
         For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
 
         You can also bind other keys to other map names as well.
+4. Now press `X` and then `V` to start editing.
 
 ### Keybinds:
 * `X` Switch legend to Bloodhound, switch to third person mode, and obtain prop tool.
