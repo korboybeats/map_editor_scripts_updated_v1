@@ -5,9 +5,9 @@
 2. Launch game in dev mode.
 3. Enter this command in console:
 
-    ``
+    `
         bind X "loadouts_devset character_selection character_bloodhound; ToggleThirdPerson; ToggleHUD; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+reload"; bind E "+use"; bind 3 "weapon_inspect"; bind 4 "+scriptCommand1"; bind 5 "+scriptCommand6"; bind R "+melee"; bind 6 "+offhand3"
-    ``
+    `
 
     * (Optional) This command is to bind F5 to refresh a map after making a change:
 
