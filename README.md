@@ -25,9 +25,9 @@ You can also bind other keys to other map names as well.
 * `Q` Cycle to previous prop.
 * `1` Raise prop.
 * `2` Lower prop.
-* `3` Change Roll (x).
+* `3` Change Yaw (z).
 * `4` Change Pitch (y).
-* `5` Change Yaw (z).
+* `5` Change Roll (x).
 * `6` Change snap size.
 * `Z` Open the model menu.
 
