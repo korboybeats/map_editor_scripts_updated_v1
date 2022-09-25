@@ -9,9 +9,9 @@
 
    * (Optional) This command is to bind F5 to refresh a map after making a change:
 
-        `bind "F5" "changelevel mapname"`
+        `bind "F5" "changelevel *mapname*"`
 
-        (replace `mapname` with the actual map's name)
+        (replace `*mapname*` with the actual map's name)
 
         For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
 
