@@ -9,13 +9,13 @@
 
    * (Optional) This command is to bind F5 to refresh a map after making a change:
 
-    `bind "F5" "changelevel mapname"`
-    
-    (replace `mapname` with the actual map's name)
+        `bind "F5" "changelevel mapname"`
 
-    For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
+        (replace `mapname` with the actual map's name)
 
-    You can also bind other keys to other map names as well.
+        For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
+
+        You can also bind other keys to other map names as well.
 
 ### Keybinds:
 * `X` Switch legend to Bloodhound, switch to third person mode, and obtain prop tool.
