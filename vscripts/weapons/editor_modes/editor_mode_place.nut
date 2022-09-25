@@ -109,45 +109,41 @@ EditorMode function EditorModePlace_Init()
 void function EditorModePlace_Activation(entity player)
 {
     
-    AddInputHint( "%scriptCommand3%", "Change Editor Mode" )
-    AddInputHint( "%ToggleThirdPerson%", "Change Perspective" )
-    AddInputHint( "%noclip%", "NoClip")  
+    AddInputHint( "%B%", "Change Editor Mode" )
+    AddInputHint( "%T%", "Change Perspective" )
+    AddInputHint( "%F%", "NoClip")  
     AddInputHint( "", "")
     AddInputHint( "%attack%", "Place Prop" )
-    AddInputHint( "%use%", "Next Prop")
-    AddInputHint( "%pushtotalk%", "Previous Prop")
-    AddInputHint( "%weaponSelectPrimary0%", "Raise" )
-    AddInputHint( "%weaponSelectPrimary1%", "Lower" )
-    AddInputHint( "%weapon_inspect%", "Change Yaw (z)" )
-    AddInputHint( "%scriptCommand1%", "Change Pitch (y)" )
-    AddInputHint( "%scriptCommand6%", "Change Roll (x)" )
-    AddInputHint( "%reload%", "Reset Prop Positions" )
-    AddInputHint( "%offhand3%", "Change Snap Size" ) // no calling in a titanfall because of this
-    AddInputHint( "%offhand4%", "Open Model Menu" )
-    
+    AddInputHint( "%E%", "Next Prop")
+    AddInputHint( "%Q%", "Previous Prop")
+    AddInputHint( "%1%", "Raise" )
+    AddInputHint( "%2%", "Lower" )
+    AddInputHint( "%3%", "Change Yaw (z)" )
+    AddInputHint( "%4%", "Change Pitch (y)" )
+    AddInputHint( "%5%", "Change Roll (x)" )
+    AddInputHint( "%R%", "Reset Prop Positions" )
+    AddInputHint( "%6%", "Change Snap Size" ) // no calling in a titanfall because of this
+    AddInputHint( "%Z%", "Open Model Menu" )   
     //AddInputHint( "%offhand1%", "Bloodhound, TPP, Equip tool" )
     
     #if CLIENT
     
     //RegisterConCommandTriggeredCallback( "+use", ServerCallback_NextProp)
-    RegisterConCommandTriggeredCallback( "+pushtotalk", ServerCallback_PreviousProp)
-    RegisterConCommandTriggeredCallback( "+reload", ServerCallback_ResetProp)
-
+    //RegisterConCommandTriggeredCallback( "+reload", ServerCallback_PreviousProp)
+    //RegisterConCommandTriggeredCallback( "+melee", ServerCallback_ResetProp)
     RegisterConCommandTriggeredCallback( "weaponSelectPrimary0", ClientCommand_UP_Client )
     RegisterConCommandTriggeredCallback( "weaponSelectPrimary1", ClientCommand_DOWN_Client )
-
     RegisterConCommandTriggeredCallback( "+scriptCommand6", SwapToNextRoll )
     RegisterConCommandTriggeredCallback( "+scriptCommand1", SwapToNextPitch )
     RegisterConCommandTriggeredCallback( "weapon_inspect", SwapToNextYaw )
-    
     RegisterConCommandTriggeredCallback( "+offhand3", SwapToNextSnapSize )
-
     RegisterConCommandTriggeredCallback( "+offhand4", ServerCallback_OpenModelMenu )
 
     #elseif SERVER
 
     AddButtonPressedPlayerInputCallback( player, IN_USE, ServerCallback_NextProp )
-    //AddButtonPressedPlayerInputCallback( player, IN_USE_ALT, ServerCallback_PreviousProp )
+    AddButtonPressedPlayerInputCallback( player, IN_RELOAD, ServerCallback_PreviousProp )
+    //AddButtonPressedPlayerInputCallback( player, IN_MELEE, ServerCallback_ResetProp )
     
     if( !(player in file.snapSizes) )
     {
@@ -192,23 +188,21 @@ void function EditorModePlace_Deactivation(entity player)
     // should also use +scriptCommands. Seriously.
 
     //DeregisterConCommandTriggeredCallback( "+use", ServerCallback_NextProp)
-    DeregisterConCommandTriggeredCallback( "+pushtotalk", ServerCallback_PreviousProp)
-    DeregisterConCommandTriggeredCallback( "+reload", ServerCallback_ResetProp)
-
+    //DeregisterConCommandTriggeredCallback( "+reload", ServerCallback_PreviousProp)
+    //DeregisterConCommandTriggeredCallback( "+melee", ServerCallback_ResetProp)
     DeregisterConCommandTriggeredCallback( "weaponSelectPrimary0", ClientCommand_UP_Client )
     DeregisterConCommandTriggeredCallback( "weaponSelectPrimary1", ClientCommand_DOWN_Client )
-
     DeregisterConCommandTriggeredCallback( "+scriptCommand6", SwapToNextRoll )
     DeregisterConCommandTriggeredCallback( "+scriptCommand1", SwapToNextPitch )
-    DeregisterConCommandTriggeredCallback( "weapon_inspect", SwapToNextYaw )
-    
+    DeregisterConCommandTriggeredCallback( "weapon_inspect", SwapToNextYaw ) 
     DeregisterConCommandTriggeredCallback( "+offhand3", SwapToNextSnapSize )
-    
     DeregisterConCommandTriggeredCallback( "+offhand4",  ServerCallback_OpenModelMenu )
+
     #elseif SERVER
 
     RemoveButtonPressedPlayerInputCallback( player, IN_USE, ServerCallback_NextProp )
-    //RemoveButtonPressedPlayerInputCallback( player, IN_USE_ALT, ServerCallback_PreviousProp )
+    RemoveButtonPressedPlayerInputCallback( player, IN_RELOAD, ServerCallback_PreviousProp )
+    //RemoveButtonPressedPlayerInputCallback( player, IN_MELEE, ServerCallback_ResetProp )
 
     #endif
     if(IsValid(GetProp(player)))
@@ -320,9 +314,30 @@ void function ServerCallback_PreviousProp( entity player )
     #endif
 }
 
-void function ServerCallback_ResetProp(entity player)
+void function ServerCallback_ResetProp( entity player )
 {
+    #if CLIENT
+    if(player != GetLocalClientPlayer()) return;
+    player = GetLocalClientPlayer()
+    #endif
 
+    if(!IsValid( player )) return
+    if(!IsAlive( player )) return
+
+    int max = GetAssets()[player.p.selectedProp.section].len()
+    if (player.p.selectedProp.index - 1 < 0) {
+        player.p.selectedProp.index = max - 1
+    } else {
+        player.p.selectedProp.index--
+    }
+
+    #if CLIENT
+    UpdateRUI(player)
+    #endif
+
+    #if SERVER
+        Remote_CallFunction_Replay( player, "ServerCallback_PreviousProp", player )
+    #endif
 }
 
 

@@ -5,7 +5,7 @@
 2. Launch game in dev mode.
 3. Enter this command in console:
 
-`bind X "loadouts_devset character_selection character_bloodhound; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+pushtotalk"; bind E "+use"; bind 5 "+scriptCommand6"; bind 4 "+scriptCommand1"; bind 3 "weapon_inspect"; bind 6 "+offhand3"`
+`bind X "loadouts_devset character_selection character_bloodhound; ToggleThirdPerson; ToggleHUD; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+reload"; bind E "+use"; bind 3 "weapon_inspect"; bind 4 "+scriptCommand1"; bind 5 "+scriptCommand6"; bind R "+melee"; bind 6 "+offhand3"`
 
 4. (Optional) This command is to bind F5 to refresh a map after making a change:
 
@@ -16,7 +16,7 @@ For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
 You can also bind other keys to other map names as well.
 
 ### Keybinds:
-* `X` Switch your character to Bloodhound and give you the prop tool.
+* `X` Switch legend to Bloodhound, switch to third person mode, and obtain prop tool.
 * `V` Equip the prop tool.
 * `T` Change perspective mode.
 * `F` Toggle noclip.
