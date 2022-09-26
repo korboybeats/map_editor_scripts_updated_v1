@@ -750,21 +750,3 @@ void function Survival_CleanupPlayerPermanents( entity player )
 {
 	
 }
-
-void function AddInputHint( string buttonText, string hintText)
-{
-
-    #if CLIENT
-    var hintRui = CreateFullscreenRui( $"ui/tutorial_hint_line.rpak" )
-
-    RuiSetString( hintRui, "buttonText", buttonText )
-    // RuiSetString( hintRui, "gamepadButtonText", gamePadButtonText )
-    RuiSetString( hintRui, "hintText", hintText )
-    // RuiSetString( hintRui, "altHintText", altHintText )
-    RuiSetInt( hintRui, "hintOffset", file.inputHintRuis.len() )
-    // RuiSetBool( hintRui, "hideWithMenus", false )
-
-    file.inputHintRuis.append( hintRui )
-
-    #endif
-}
