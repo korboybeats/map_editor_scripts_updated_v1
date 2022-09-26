@@ -11,11 +11,11 @@
 
     * (Optional) This command is to bind F5 to refresh a map after making a change:
 
-        `bind "F5" "changelevel <map>"`
+        `bind F5 "changelevel <map>"`
 
         Replace `<map>` with the actual map's name.
 
-        For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
+        For example: `bind F5 "changelevel mp_rr_desertlands_64k_x_64k"`
 
         You can also bind other keys to other map names as well.
 4. Now press `X` and then `V` to start editing.
