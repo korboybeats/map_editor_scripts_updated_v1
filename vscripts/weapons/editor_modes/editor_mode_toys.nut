@@ -41,7 +41,7 @@ struct {
 void function EditorModeToys_Activation(entity player)
 {
     AddInputHint( "%scriptCommand3%", "Change Editor Mode" )
-    AddInputHint( "%ToggleThirdPerson%", "Change Perspective" )
+    AddInputHint( "%T%", "Change Perspective" )
     AddInputHint( "%noclip%", "NoClip")
 
 
