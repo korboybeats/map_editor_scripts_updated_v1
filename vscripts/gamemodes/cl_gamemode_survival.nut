@@ -105,6 +105,7 @@ global function CircleAnnouncementsEnable
 
 global function AddSurvivalEditorStartHint
 
+
 global struct NextCircleDisplayCustomData
 {
 	float  circleStartTime
@@ -191,7 +192,9 @@ global struct SquadSummaryData
 }
 
 struct
-{			
+{		
+	array<var> inputHintRuis
+		
 	var titanLinkProgressRui
 	var dpadMenuRui
 	var pilotRui
@@ -499,7 +502,7 @@ bool function SprintFXAreEnabled()
 
 void function OnPlayerCreated( entity player )
 {
-	AddSurvivalEditorStartHint()
+	//AddSurvivalEditorStartHint()
 	
 	if ( SprintFXAreEnabled() )
 	{
@@ -4781,6 +4784,13 @@ void function AddCallback_ShouldRunCharacterSelection( bool functionref() func )
 	file.shouldRunCharacterSelectionCallback = func
 }
 
+
+void function AddSurvivalEditorStartHint()
+{
+	AddInputHint( "%V%", "Activate Prop Tool" )
+}
+
+
 void function AddInputHint( string buttonText, string hintText)
 {
 	#if CLIENT
@@ -4790,15 +4800,10 @@ void function AddInputHint( string buttonText, string hintText)
 	// RuiSetString( hintRui, "gamepadButtonText", gamePadButtonText )
 	RuiSetString( hintRui, "hintText", hintText )
 	// RuiSetString( hintRui, "altHintText", altHintText )
-	RuiSetInt( hintRui, "hintOffset", 0 )
+	RuiSetInt( hintRui, "hintOffset", file.inputHintRuis.len() )
 	// RuiSetBool( hintRui, "hideWithMenus", false )
 
     startEditorRUIs.append(hintRui)
-	#endif
-}
 
-void function AddSurvivalEditorStartHint()
-{
-	AddInputHint( "%X%", "Equip Prop Tool" )
-	AddInputHint( "%V%", "Activate Prop Tool" )
+	#endif
 }
