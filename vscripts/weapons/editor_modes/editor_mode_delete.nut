@@ -44,7 +44,7 @@ EditorMode function EditorModeDelete_Init()
 void function EditorModeDelete_Activation(entity player)
 {
     AddInputHint( "%scriptCommand3%", "Change Editor Mode" )
-    AddInputHint( "%ToggleThirdPerson%", "Change Perspective" )
+    AddInputHint( "%T%", "Change Perspective" )
     AddInputHint( "%noclip%", "NoClip")
     AddInputHint( "", "")
     AddInputHint( "%attack%", "Delete Prop" )
