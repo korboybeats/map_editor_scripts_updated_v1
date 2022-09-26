@@ -131,13 +131,12 @@ void function EditorModePlace_Activation(entity player)
     AddInputHint( "%R%", "Reset Prop Positions" )
     AddInputHint( "%6%", "Change Snap Size" ) // no calling in a titanfall because of this
     AddInputHint( "%Z%", "Open Model Menu" )   
-    //AddInputHint( "%offhand1%", "Bloodhound, TPP, Equip tool" )
     
     #if CLIENT
     
     //RegisterConCommandTriggeredCallback( "+use", ServerCallback_NextProp)
     //RegisterConCommandTriggeredCallback( "+reload", ServerCallback_PreviousProp)
-    //RegisterConCommandTriggeredCallback( "+melee", ServerCallback_ResetProp)
+    RegisterConCommandTriggeredCallback( "+pushtotalk", ServerCallback_ResetProp)
     RegisterConCommandTriggeredCallback( "weaponSelectPrimary0", ClientCommand_UP_Client )
     RegisterConCommandTriggeredCallback( "weaponSelectPrimary1", ClientCommand_DOWN_Client )
     RegisterConCommandTriggeredCallback( "+scriptCommand6", SwapToNextRoll )
@@ -196,7 +195,7 @@ void function EditorModePlace_Deactivation(entity player)
 
     //DeregisterConCommandTriggeredCallback( "+use", ServerCallback_NextProp)
     //DeregisterConCommandTriggeredCallback( "+reload", ServerCallback_PreviousProp)
-    //DeregisterConCommandTriggeredCallback( "+melee", ServerCallback_ResetProp)
+    DeregisterConCommandTriggeredCallback( "+pushtotalk", ServerCallback_ResetProp)
     DeregisterConCommandTriggeredCallback( "weaponSelectPrimary0", ClientCommand_UP_Client )
     DeregisterConCommandTriggeredCallback( "weaponSelectPrimary1", ClientCommand_DOWN_Client )
     DeregisterConCommandTriggeredCallback( "+scriptCommand6", SwapToNextRoll )
@@ -326,26 +325,36 @@ void function ServerCallback_PreviousProp( entity player )
 void function ServerCallback_ResetProp( entity player )
 {
     #if CLIENT
-    if(player != GetLocalClientPlayer()) return;
-    player = GetLocalClientPlayer()
-    #endif
-
-    if(!IsValid( player )) return
-    if(!IsAlive( player )) return
-
-    int max = GetAssets()[player.p.selectedProp.section].len()
-    if (player.p.selectedProp.index - 1 < 0) {
-        player.p.selectedProp.index = max - 1
-    } else {
-        player.p.selectedProp.index--
+    if (player != GetLocalClientPlayer()) return;
+    switch (file.pitch)
+    {
+            default:
+            file.pitch = 0
+            player.ClientCommand( "ChangePitchRotation 0" )
+            break;  
     }
+    #endif
 
     #if CLIENT
-    UpdateRUI(player)
+    if (player != GetLocalClientPlayer()) return;
+    switch (file.yaw)
+    {
+            default:
+            file.yaw = 0
+            player.ClientCommand( "ChangeYawRotation 0" )
+            break;  
+    }
     #endif
 
-    #if SERVER
-        Remote_CallFunction_Replay( player, "ServerCallback_PreviousProp", player )
+    #if CLIENT
+    if (player != GetLocalClientPlayer()) return;
+    switch (file.roll)
+    {
+            default:
+            file.roll = 0
+            player.ClientCommand( "ChangeRollRotation 0" )
+            break;  
+    }
     #endif
 }
 
