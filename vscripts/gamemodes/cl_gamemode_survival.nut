@@ -4783,19 +4783,22 @@ void function AddCallback_ShouldRunCharacterSelection( bool functionref() func )
 
 void function AddInputHint( string buttonText, string hintText)
 {
+	#if CLIENT
     var hintRui = CreateFullscreenRui( $"ui/tutorial_hint_line.rpak" )
-
+	
 	RuiSetString( hintRui, "buttonText", buttonText )
 	// RuiSetString( hintRui, "gamepadButtonText", gamePadButtonText )
 	RuiSetString( hintRui, "hintText", hintText )
 	// RuiSetString( hintRui, "altHintText", altHintText )
-	RuiSetInt( hintRui, "hintOffset", 1 )
+	RuiSetInt( hintRui, "hintOffset", 0 )
 	// RuiSetBool( hintRui, "hideWithMenus", false )
 
     startEditorRUIs.append(hintRui)
+	#endif
 }
 
 void function AddSurvivalEditorStartHint()
 {
-	AddInputHint( "%V%", "Start editing" )
+	AddInputHint( "%X%", "Equip Prop Tool" )
+	AddInputHint( "%V%", "Activate Prop Tool" )
 }
