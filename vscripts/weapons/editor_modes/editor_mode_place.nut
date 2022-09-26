@@ -128,7 +128,7 @@ void function EditorModePlace_Activation(entity player)
     AddInputHint( "%3%", "Change Yaw (z)" )
     AddInputHint( "%4%", "Change Pitch (y)" )
     AddInputHint( "%5%", "Change Roll (x)" )
-    AddInputHint( "%R%", "Reset Prop Positions" )
+    AddInputHint( "%R%", "Reset Prop Positions (x,y,z)" )
     AddInputHint( "%6%", "Change Snap Size" ) // no calling in a titanfall because of this
     AddInputHint( "%Z%", "Open Model Menu" )   
     
