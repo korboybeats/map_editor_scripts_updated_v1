@@ -1,7 +1,5 @@
 # Fireproof's Map Editor Tool updated by Korboy
 
------------
-
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
 2. Launch game in dev mode.
@@ -23,8 +21,8 @@
 4. Now press `X` and then `V` to start editing.
 
 ### Keybinds:
-* `X` Switch legend to Bloodhound, switch to third person mode, and obtain prop tool.
-* `V` Equip the prop tool.
+* `X` Receive Prop Tool, change legend to Bloodhound, switch to TPP, disable HUD.
+* `V` Activate Prop Tool.
 * `T` Change perspective mode.
 * `F` Toggle noclip.
 * `MOUSE1` Place prop.
