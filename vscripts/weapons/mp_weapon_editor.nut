@@ -8,7 +8,6 @@ global function GetEditorModes
 
 global function GetPropToolStartHint
 
-
 #if SERVER
 global function ClientCommand_Compile 
 global function ClientCommand_Load
@@ -439,3 +438,14 @@ void function UpdateRUI(entity player) {
     RuiSetString( file.rui,"messageText", currIndex + "/" + max + " | " + currentAsset);
 }
 #endif
+
+void function RemoveAllHints()
+{
+    #if CLIENT
+    foreach( rui in file.inputHintRuis )
+    {
+        RuiDestroy( rui )
+    }
+    file.inputHintRuis.clear()
+    #endif
+}
