@@ -107,8 +107,15 @@ EditorMode function EditorModePlace_Init()
 }
 
 void function EditorModePlace_Activation(entity player)
-{
-    
+{   
+    #if CLIENT
+    foreach( rui in startEditorRUIs )
+    {
+        RuiDestroy( rui )
+    }
+    startEditorRUIs.clear()
+    #endif
+
     AddInputHint( "%B%", "Change Editor Mode" )
     AddInputHint( "%T%", "Change Perspective" )
     AddInputHint( "%F%", "NoClip")  
@@ -197,6 +204,8 @@ void function EditorModePlace_Deactivation(entity player)
     DeregisterConCommandTriggeredCallback( "weapon_inspect", SwapToNextYaw ) 
     DeregisterConCommandTriggeredCallback( "+offhand3", SwapToNextSnapSize )
     DeregisterConCommandTriggeredCallback( "+offhand4",  ServerCallback_OpenModelMenu )
+
+    AddSurvivalEditorStartHint()
 
     #elseif SERVER
 
