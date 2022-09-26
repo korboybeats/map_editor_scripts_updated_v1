@@ -6,6 +6,9 @@ global function OnWeaponOwnerChanged_weapon_editor
 global function OnWeaponPrimaryAttack_weapon_editor
 global function GetEditorModes
 
+global function GetPropToolStartHint
+
+
 #if SERVER
 global function ClientCommand_Compile 
 global function ClientCommand_Load
@@ -40,11 +43,11 @@ struct
 
 void function MpWeaponEditor_Init()
 {
+    GetPropToolStartHint()
+    
     RegisterEditorMode(EditorModePlace_Init())
     RegisterEditorMode(EditorModeDelete_Init())
     RegisterEditorMode(EditorModeToys_Init())
-
-
 
     AddCallback_OnPlayerAddWeaponMod(CycleWeaponMode)
     AddCallback_OnPlayerRemoveWeaponMod(CycleWeaponMode)
@@ -115,7 +118,7 @@ void function OnWeaponActivate_weapon_editor( entity weapon )
     #if CLIENT
     if (weapon.GetOwner() != GetLocalClientPlayer()) return
     entity player = GetLocalClientPlayer()
-
+    
     
     RegisterConCommandTriggeredCallback("+use_alt", OpenEditorModeSelector)
     RegisterConCommandTriggeredCallback("-use_alt", CloseEditorModeSelector)
@@ -224,6 +227,31 @@ bool function OnWeaponAttemptOffhandSwitch_weapon_editor( entity weapon )
 
     return true //currAmmo >= ammoReq
 }
+
+void function AddInputHint( string buttonText, string hintText)
+{
+
+    #if CLIENT
+    var hintRui = CreateFullscreenRui( $"ui/tutorial_hint_line.rpak" )
+
+	RuiSetString( hintRui, "buttonText", buttonText )
+	// RuiSetString( hintRui, "gamepadButtonText", gamePadButtonText )
+	RuiSetString( hintRui, "hintText", hintText )
+	// RuiSetString( hintRui, "altHintText", altHintText )
+	RuiSetInt( hintRui, "hintOffset", -1 )
+	// RuiSetBool( hintRui, "hideWithMenus", false )
+
+    startEditorRUIs.append(hintRui)
+
+    #endif
+}
+
+void function GetPropToolStartHint()
+{
+	AddInputHint( "%X%", "Get Prop Tool" )
+}
+
+
 
 
 
