@@ -13,7 +13,7 @@
 
         `bind "F5" "changelevel <map>"`
 
-        (replace <map> with the actual map's name)
+        (replace `<map>` with the actual map's name)
 
         For example: `bind "F5" "changelevel mp_rr_desertlands_64k_x_64k"`
 
