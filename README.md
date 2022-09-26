@@ -21,7 +21,7 @@
 4. Now press `X` and then `V` to start editing.
 
 ### Keybinds:
-* `X` Receive Prop Tool, change legend to Bloodhound, switch to TPP, disable HUD.
+* `X` Receive Prop Tool, change legend to Bloodhound, switch to TPP, and disable HUD.
 * `V` Activate Prop Tool.
 * `T` Change perspective mode.
 * `F` Toggle noclip.
