@@ -44,6 +44,13 @@ void function EditorModeToys_Activation(entity player)
     AddInputHint( "%T%", "Change Perspective" )
     AddInputHint( "%noclip%", "NoClip")
 
+    #if CLIENT
+    foreach( rui in startEditorRUIs )
+    {
+        RuiDestroy( rui )
+    }
+    startEditorRUIs.clear()
+    #endif
 
     #if CLIENT
     
@@ -107,7 +114,10 @@ void function AddInputHint( string buttonText, string hintText)
 
 void function EditorModeToys_Deactivation(entity player)
 {
-    RemoveAllHints()   
+    RemoveAllHints() 
+    #if CLIENT
+    AddSurvivalEditorStartHint()
+    #endif  
 }
 
 void function EditorModeToys_Place(entity player)
