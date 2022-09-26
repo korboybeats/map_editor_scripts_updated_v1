@@ -33,6 +33,7 @@
 * `3` Change Yaw (z).
 * `4` Change Pitch (y).
 * `5` Change Roll (x).
+* `R` Reset Prop Positions (x,y,z)
 * `6` Change snap size.
 * `Z` Open the model menu.
 
