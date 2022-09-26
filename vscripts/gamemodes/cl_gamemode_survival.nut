@@ -499,7 +499,7 @@ bool function SprintFXAreEnabled()
 
 void function OnPlayerCreated( entity player )
 {
-	AddInputHint( "%X%", "Equip Prop Tool" )
+	AddSurvivalEditorStartHint()
 	
 	if ( SprintFXAreEnabled() )
 	{
@@ -4797,5 +4797,5 @@ void function AddInputHint( string buttonText, string hintText)
 
 void function AddSurvivalEditorStartHint()
 {
-	AddInputHint( "%X%", "Equip Prop Tool" )
+	AddInputHint( "%V%", "Start editing" )
 }
