@@ -43,6 +43,14 @@ EditorMode function EditorModeDelete_Init()
 
 void function EditorModeDelete_Activation(entity player)
 {
+    #if CLIENT
+    foreach( rui in startEditorRUIs )
+    {
+        RuiDestroy( rui )
+    }
+    startEditorRUIs.clear()
+    #endif
+
     AddInputHint( "%scriptCommand3%", "Change Editor Mode" )
     AddInputHint( "%T%", "Change Perspective" )
     AddInputHint( "%noclip%", "NoClip")
@@ -116,8 +124,13 @@ void function EditorModeDelete_Think(entity player) {
 
 void function EditorModeDelete_Deactivation(entity player)
 {
+    #if CLIENT
+    AddSurvivalEditorStartHint()
+    #endif
+
     RemoveAllHints()
     Signal(player, "EditorModeDeleteExit")
+    
 }
 
 void function EditorModeDelete_Delete(entity player)
