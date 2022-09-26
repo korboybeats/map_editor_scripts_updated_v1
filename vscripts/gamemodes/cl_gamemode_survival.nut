@@ -103,6 +103,8 @@ global function Dev_AdjustVictorySequence
 global function GetCompassRui
 global function CircleAnnouncementsEnable
 
+global function AddSurvivalEditorStartHint
+
 global struct NextCircleDisplayCustomData
 {
 	float  circleStartTime
@@ -162,6 +164,8 @@ global const float SAFE_ZONE_ALPHA = 0.05
 global const string HEALTHKIT_BIND_COMMAND = "+scriptCommand2"
 global const string ORDNANCEMENU_BIND_COMMAND = "+strafe"
 
+global array<var> startEditorRUIs = []
+
 struct MinimapLabelStruct
 {
 	string name
@@ -187,7 +191,7 @@ global struct SquadSummaryData
 }
 
 struct
-{
+{			
 	var titanLinkProgressRui
 	var dpadMenuRui
 	var pilotRui
@@ -495,6 +499,8 @@ bool function SprintFXAreEnabled()
 
 void function OnPlayerCreated( entity player )
 {
+	AddInputHint( "%X%", "Equip Prop Tool" )
+	
 	if ( SprintFXAreEnabled() )
 	{
 		if ( player == GetLocalViewPlayer() )
@@ -4773,4 +4779,23 @@ var function GetCompassRui()
 void function AddCallback_ShouldRunCharacterSelection( bool functionref() func )
 {
 	file.shouldRunCharacterSelectionCallback = func
+}
+
+void function AddInputHint( string buttonText, string hintText)
+{
+    var hintRui = CreateFullscreenRui( $"ui/tutorial_hint_line.rpak" )
+
+	RuiSetString( hintRui, "buttonText", buttonText )
+	// RuiSetString( hintRui, "gamepadButtonText", gamePadButtonText )
+	RuiSetString( hintRui, "hintText", hintText )
+	// RuiSetString( hintRui, "altHintText", altHintText )
+	RuiSetInt( hintRui, "hintOffset", 1 )
+	// RuiSetBool( hintRui, "hideWithMenus", false )
+
+    startEditorRUIs.append(hintRui)
+}
+
+void function AddSurvivalEditorStartHint()
+{
+	AddInputHint( "%X%", "Equip Prop Tool" )
 }
