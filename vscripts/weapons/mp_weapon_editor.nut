@@ -442,6 +442,6 @@ void function UpdateRUI(entity player) {
 
 void function AddActivatePropToolHint()
 {
-	AddInputHint( "%V%", "Activate Prop Tool" )
+	AddInputHint( "%V%", "Activate Editor Mode" )
 }
 
