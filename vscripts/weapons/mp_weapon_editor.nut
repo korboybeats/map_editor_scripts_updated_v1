@@ -257,6 +257,7 @@ void function GetPropToolStartHint()
 
 
 
+
 // CODE FROM THE OTHER VERSION OF THE MODEL TOOL
 // Most of this was written by Pebbers (@Vysteria on Github)
 
