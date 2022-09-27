@@ -52,8 +52,6 @@
 ### Known Issues:
 * You can't go in to the prop menu when the zipline is equipped (unintended feature)
 * Doesn't work on KC S2 or Ash's Redemption
-* Deactivating editor mode
-
 --------------------------------------
 
 ### Huge thanks to `M͢1ke̵̲ͅp̴͖̙̞#9446`, `mostly fireproof#2095`, and `Bogass#1210` for helping me create these changes.
