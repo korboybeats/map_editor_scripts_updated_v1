@@ -105,6 +105,7 @@ global function CircleAnnouncementsEnable
 
 global function AddActivatePropToolHint
 global function OnPressX
+global function GetPropToolStartHint
 
 
 global struct NextCircleDisplayCustomData
@@ -503,6 +504,8 @@ bool function SprintFXAreEnabled()
 
 void function OnPlayerCreated( entity player )
 {	
+	GetPropToolStartHint()
+	
 	if ( SprintFXAreEnabled() )
 	{
 		if ( player == GetLocalViewPlayer() )
@@ -4822,4 +4825,9 @@ void function RemoveAllHints()
     }
     file.inputHintRuis.clear()
     #endif
+}
+
+void function GetPropToolStartHint()
+{
+	AddInputHint( "%X%", "Get Prop Tool" )
 }

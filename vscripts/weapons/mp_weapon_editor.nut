@@ -6,8 +6,6 @@ global function OnWeaponOwnerChanged_weapon_editor
 global function OnWeaponPrimaryAttack_weapon_editor
 global function GetEditorModes
 
-global function GetPropToolStartHint
-
 #if SERVER
 global function ClientCommand_Compile 
 global function ClientCommand_Load
@@ -43,8 +41,6 @@ struct
 
 void function MpWeaponEditor_Init()
 {
-    GetPropToolStartHint()
-    
     RegisterEditorMode(EditorModePlace_Init())
     RegisterEditorMode(EditorModeDelete_Init())
     RegisterEditorMode(EditorModeToys_Init())
@@ -64,7 +60,6 @@ void function MpWeaponEditor_Init()
 void function RegisterEditorMode(EditorMode mode)
 {
     file.editorModes.append(mode)
-
 }
 
 array<EditorMode> function GetEditorModes()
@@ -192,7 +187,15 @@ var function OnWeaponPrimaryAttack_weapon_editor( entity weapon, WeaponPrimaryAt
 
 void function OnWeaponOwnerChanged_weapon_editor( entity weapon, WeaponOwnerChangedParams changeParams )
 {
-	
+    #if CLIENT
+    foreach( rui in startEditorRUIs )
+    {
+        RuiDestroy( rui )
+    }
+    startEditorRUIs.clear()
+    #endif
+
+    AddActivatePropToolHint()
 }
 
 void function CycleWeaponMode( entity player, entity weapon, string mod )
@@ -238,7 +241,7 @@ void function AddInputHint( string buttonText, string hintText)
 	// RuiSetString( hintRui, "gamepadButtonText", gamePadButtonText )
 	RuiSetString( hintRui, "hintText", hintText )
 	// RuiSetString( hintRui, "altHintText", altHintText )
-	RuiSetInt( hintRui, "hintOffset", -1 )
+	RuiSetInt( hintRui, "hintOffset", 0 )
 	// RuiSetBool( hintRui, "hideWithMenus", false )
 
     startEditorRUIs.append(hintRui)
@@ -246,10 +249,6 @@ void function AddInputHint( string buttonText, string hintText)
     #endif
 }
 
-void function GetPropToolStartHint()
-{
-	AddInputHint( "%X%", "Get Prop Tool" )
-}
 
 
 
@@ -441,13 +440,8 @@ void function UpdateRUI(entity player) {
 }
 #endif
 
-void function RemoveAllHints()
+void function AddActivatePropToolHint()
 {
-    #if CLIENT
-    foreach( rui in file.inputHintRuis )
-    {
-        RuiDestroy( rui )
-    }
-    file.inputHintRuis.clear()
-    #endif
+	AddInputHint( "%V%", "Activate Prop Tool" )
 }
+
