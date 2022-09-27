@@ -29,6 +29,7 @@ struct
     // store the props here for saving and loading
     array<entity> allProps
     array<EditorMode> editorModes
+    array<var> inputHintRuis
 
     #if CLIENT
     var rui
