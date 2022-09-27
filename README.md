@@ -2,8 +2,8 @@
 
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
-2. Launch game in dev mode.
-3. Go to ```C:\Users\%username%\Saved Games\Respawn\Apex_fnf\local``` then make a backup of your `settings.cfg` file.
+2. Go to `\Users\%username%\Saved Games\Respawn\Apex_fnf\local` then make a backup of your `settings.cfg` file.
+3. Launch game in dev mode.
 4. Enter this command in console:
 
     ```
