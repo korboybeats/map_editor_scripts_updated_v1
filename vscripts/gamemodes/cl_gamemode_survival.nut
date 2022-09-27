@@ -4789,7 +4789,7 @@ void function AddCallback_ShouldRunCharacterSelection( bool functionref() func )
 
 void function AddActivatePropToolHint()
 {
-	AddInputHint( "%V%", "Activate Prop Tool" )
+	AddInputHint( "%V%", "Activate Editor Mode" )
 }
 
 void function OnPressX()
