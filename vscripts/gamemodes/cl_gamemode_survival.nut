@@ -103,7 +103,8 @@ global function Dev_AdjustVictorySequence
 global function GetCompassRui
 global function CircleAnnouncementsEnable
 
-global function AddSurvivalEditorStartHint
+global function AddActivatePropToolHint
+global function OnPressX
 
 
 global struct NextCircleDisplayCustomData
@@ -4783,9 +4784,15 @@ void function AddCallback_ShouldRunCharacterSelection( bool functionref() func )
 }
 
 
-void function AddSurvivalEditorStartHint()
+void function AddActivatePropToolHint()
 {
 	AddInputHint( "%V%", "Activate Prop Tool" )
+}
+
+void function OnPressX()
+{	
+	RemoveAllHints()
+	AddActivatePropToolHint()
 }
 
 
@@ -4804,4 +4811,15 @@ void function AddInputHint( string buttonText, string hintText)
     startEditorRUIs.append(hintRui)
 
 	#endif
+}
+
+void function RemoveAllHints()
+{
+    #if CLIENT
+    foreach( rui in file.inputHintRuis )
+    {
+        RuiDestroy( rui )
+    }
+    file.inputHintRuis.clear()
+    #endif
 }

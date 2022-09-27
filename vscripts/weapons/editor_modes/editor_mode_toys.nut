@@ -116,7 +116,7 @@ void function EditorModeToys_Deactivation(entity player)
 {
     RemoveAllHints() 
     #if CLIENT
-    AddSurvivalEditorStartHint()
+    AddActivatePropToolHint()
     #endif  
 }
 
