@@ -2,7 +2,7 @@
 
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
-2. Go to 
+2. Go to:
     ```
     C:\Users\%username%\Saved Games\Respawn\Apex_fnf\local
     ```
