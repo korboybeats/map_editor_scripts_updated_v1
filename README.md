@@ -3,7 +3,8 @@
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
 2. Launch game in dev mode.
-3. Enter this command in console:
+3. Go to `C:\Users\%username%\Saved Games\Respawn\Apex_fnf\local` then make a backup of your `settings.cfg` file.
+4. Enter this command in console:
 
     ```
         bind X "loadouts_devset character_selection character_bloodhound; ToggleThirdPerson; ToggleHUD; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+reload"; bind E "+use"; bind 3 "weapon_inspect"; bind 4 "+scriptCommand1"; bind 5 "+scriptCommand6"; bind R "+pushtotalk"; bind 6 "+offhand3"
@@ -18,7 +19,7 @@
         For example: `bind F5 "changelevel mp_rr_desertlands_64k_x_64k"`
 
         You can also bind other keys to other map names as well.
-4. Now press `X` and then `V` to start editing.
+5. Now press `X` and then `V` to start editing.
 
 ### Keybinds:
 * `X` Receive Prop Tool, change legend to Bloodhound, switch to TPP, and disable HUD.
