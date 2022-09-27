@@ -501,9 +501,7 @@ bool function SprintFXAreEnabled()
 
 
 void function OnPlayerCreated( entity player )
-{
-	//AddSurvivalEditorStartHint()
-	
+{	
 	if ( SprintFXAreEnabled() )
 	{
 		if ( player == GetLocalViewPlayer() )
