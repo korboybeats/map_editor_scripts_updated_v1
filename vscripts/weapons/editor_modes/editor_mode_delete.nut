@@ -125,7 +125,7 @@ void function EditorModeDelete_Think(entity player) {
 void function EditorModeDelete_Deactivation(entity player)
 {
     #if CLIENT
-    AddSurvivalEditorStartHint()
+    AddActivatePropToolHint()
     #endif
 
     RemoveAllHints()

@@ -204,7 +204,7 @@ void function EditorModePlace_Deactivation(entity player)
     DeregisterConCommandTriggeredCallback( "+offhand3", SwapToNextSnapSize )
     DeregisterConCommandTriggeredCallback( "+offhand4",  ServerCallback_OpenModelMenu )
 
-    AddSurvivalEditorStartHint()
+    AddActivatePropToolHint()
 
     #elseif SERVER
 
