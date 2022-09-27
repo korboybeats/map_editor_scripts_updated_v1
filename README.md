@@ -2,7 +2,11 @@
 
 ### Getting started:
 1. Download this repo and replace your current scripts (back them up first if you have changed anything you want to keep).
-2. Go to ````C:\Users\%username%\Saved Games\Respawn\Apex_fnf\local```` then make a backup of your `settings.cfg` file.
+2. Go to 
+    ````
+    C:\Users\%username%\Saved Games\Respawn\Apex_fnf\local
+    ````
+    then make a backup of your `settings.cfg` file.
     * When you are done using the map editor, replace your `settings.cfg` file with the backup you made.
 3. Launch game in dev mode.
 4. Enter this command in console:
