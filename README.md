@@ -54,6 +54,6 @@
 * Doesn't work on KC S2 or Ash's Redemption.
 --------------------------------------
 
-### Huge thanks to @M1kep `M͢1ke̵̲ͅp̴͖̙̞#9446`, `mostly fireproof#2095`, and `Bogass#1210` for helping me create these changes.
+### Huge thanks to [@M1kep](https://github.com/M1kep) `M͢1ke̵̲ͅp̴͖̙̞#9446`, `mostly fireproof#2095`, and `Bogass#1210` for helping me create these changes.
 
 #### <sub>If you want Fireproof's original map editor scripts, go [here](https://github.com/mostlyfireproof/scripts_r5/tree/SalEditor)<sub>
