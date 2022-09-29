@@ -24,6 +24,7 @@
         For example: `bind F5 "changelevel mp_rr_desertlands_64k_x_64k"`
 
         You can also bind other keys to other map names as well.
+        
     (When you are finished using the map editor and want to go back to your regular binds, replace your `settings.cfg` file with the backup you made)
 5. Now press `X` and then `V` to start editing.
 
