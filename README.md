@@ -13,7 +13,6 @@
     ```
         bind X "loadouts_devset character_selection character_bloodhound; ToggleThirdPerson; ToggleHUD; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+reload"; bind E "+use"; bind 3 "weapon_inspect"; bind 4 "+scriptCommand1"; bind 5 "+scriptCommand6"; bind R "+pushtotalk"; bind 6 "+offhand3"
     ```
-    (When you are finished using the map editor and want to go back to your regular binds, replace your `settings.cfg` file with the backup you made)
 
     * (Optional) This command is to bind F5 to refresh a map after making a change:
 
@@ -24,7 +23,7 @@
         For example: `bind F5 "changelevel mp_rr_desertlands_64k_x_64k"`
 
         You can also bind other keys to other map names as well.
-        
+
     (When you are finished using the map editor and want to go back to your regular binds, replace your `settings.cfg` file with the backup you made)
 5. Now press `X` and then `V` to start editing.
 
