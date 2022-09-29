@@ -6,14 +6,14 @@
     ```
     C:\Users\%username%\Saved Games\Respawn\Apex_fnf\local
     ```
-    then make a backup of your `settings.cfg` file.
-    * When you are done using the map editor, replace your `settings.cfg` file with the backup you made.
+    and make a backup of your `settings.cfg` file.
 3. Launch game in dev mode.
 4. Enter this command in console:
 
     ```
         bind X "loadouts_devset character_selection character_bloodhound; ToggleThirdPerson; ToggleHUD; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+reload"; bind E "+use"; bind 3 "weapon_inspect"; bind 4 "+scriptCommand1"; bind 5 "+scriptCommand6"; bind R "+pushtotalk"; bind 6 "+offhand3"
     ```
+    (*When you are finished using the map editor and want to go back to your regular settings, replace your `settings.cfg` file with the backup you made*)
 
     * (Optional) This command is to bind F5 to refresh a map after making a change:
 
