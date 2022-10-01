@@ -1090,7 +1090,7 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/colony/farmland_bathroom_01.rmdl", <3591.82,-5518,40899.8>, <0,0,0>, true, 8000, -1 )
 
     //Building with stairs, garage and tank
-    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2760,-5350,40719.5>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2750,-5350,40719.5>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/desertlands/fence_large_concrete_metal_dirty_192_01.rmdl", <4276.16,-6152.96,40719.8>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/desertlands/industrial_metal_frame_wall_256x144_04.rmdl", <2595,-5311,40719.4>, <0,90,0>, true, 8000, -1 )
     
