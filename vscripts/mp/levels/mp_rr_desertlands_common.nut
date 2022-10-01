@@ -879,12 +879,16 @@ void function SpawnEditorProps()
 
 	//Cargo Containers and Farmland Crates
         //Middle 3
-    CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_white.rmdl", <2932.24,-4935.93,40719>, <0,-90,0>, true, 8000, -1 )
-    CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_blue.rmdl", <2932.09,-4807.96,40719>, <0,-90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_white.rmdl", <2932.24,-4945,40719>, <0,-90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_blue.rmdl", <2932.09,-4790,40719>, <0,-90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_red.rmdl", <2824.96,-4868.50,40719>, <0,0,0>, true, 8000, -1 )
-    CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_red.rmdl", <2804.96,-4868.40,40719.5>, <0,0,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_red.rmdl", <2770.96,-4868.40,40719.5>, <0,0,0>, true, 8000, -1 )
+
+    CreateEditorProp( $"mdl/containers/pelican_case_large_drabgreen.rmdl", <2939.05,-4867.88,40719.7>, <0,0,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/containers/pelican_case_large_drabgreen.rmdl", <2939.05,-4867.88,40751>, <0,0,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/containers/pelican_case_large_drabgreen.rmdl", <2939.05,-4867.88,40782.3>, <0,0,0>, true, 8000, -1 )
     //vehicle
-    CreateEditorProp( $"mdl/vehicles_r5/land/msc_suv_partum/veh_land_msc_suv_partum_static.rmdl", <2695,-4950.16,40719.2>, <0,-90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/vehicles_r5/land/msc_suv_partum/veh_land_msc_suv_partum_static.rmdl", <2650,-4930,40719.2>, <0,-90,0>, true, 8000, -1 )
 
         //Under right plate wing
     CreateEditorProp( $"mdl/IMC_base/cargo_container_imc_01_blue.rmdl", <3440,-4810,40719>, <0,180,0>, true, 8000, -1 )
@@ -1060,6 +1064,7 @@ void function SpawnEditorProps()
     
 
     //Plane Cockpit Interior
+    
         //global_access_panel_button_console_w_stand
     //CreateEditorProp( $"mdl/props/global_access_panel_button/global_access_panel_button_console_w_stand.rmdl", <3768,-5643,40899.2>, <0,180,0>, true, 8000, -1 )
     //CreateEditorProp( $"mdl/props/global_access_panel_button/global_access_panel_button_console_w_stand.rmdl", <3688,-5643,40899.3>, <0,180,0>, true, 8000, -1 )
@@ -1090,15 +1095,35 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/colony/farmland_bathroom_01.rmdl", <3591.82,-5518,40899.8>, <0,0,0>, true, 8000, -1 )
 
     //Building with stairs, garage and tank
-    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2750,-5350,40719.5>, <0,90,0>, true, 8000, -1 )
+        //North wall
+    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2745,-5350,40719.5>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2364,-5350,40719.5>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2487,-5349.97,40719.5>, <0,90,0>, true, 8000, -1 )
+        //East wall
+    CreateEditorProp( $"mdl/desertlands/desertlands_city_slanted_building_01_wall_64.rmdl", <2770,-5375,40719.5>, <0,0,0>, true, 8000, -1 )
+
     CreateEditorProp( $"mdl/desertlands/fence_large_concrete_metal_dirty_192_01.rmdl", <4276.16,-6152.96,40719.8>, <0,90,0>, true, 8000, -1 )
+        //Stairs
+    CreateEditorProp( $"mdl/ola/sewer_staircase_short_quad.rmdl", <2839.89,-5356.82,40751.4>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/ola/sewer_staircase_short_quad.rmdl", <2839.89,-5404.83,40783.4>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/ola/sewer_staircase_short_quad.rmdl", <2839.89,-5452.84,40815.4>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/ola/sewer_staircase_short_double.rmdl", <2839.89,-5476.84,40831.4>, <0,90,0>, true, 8000, -1 )
+        //Stairs platform
+    CreateEditorProp( $"mdl/colony/ventilation_unit_01_black.rmdl", <2839.97,-5525,40816>, <0,0,0>, true, 8000, -1 )
+    
         //Garage Door
-    CreateEditorProp( $"mdl/desertlands/industrial_metal_frame_wall_256x144_04.rmdl", <2570,-5311,40719.4>, <0,90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/desertlands/industrial_metal_frame_wall_256x144_04.rmdl", <2560,-5311,40719.4>, <0,90,0>, true, 8000, -1 )
+        //Barrier near garage door
+    CreateEditorProp( $"mdl/barriers/concrete/concrete_barrier_01.rmdl", <2687,-5266,40719.4>, <0,7,0>, true, 8000, -1 )
+        //Fuse box
+    CreateEditorProp( $"mdl/electricalboxes/fusebox_rusty.rmdl", <2763.88,-5308.97,40787.8>, <0,-90,0>, true, 8000, -1 )
+        
     
 
 
     //Airport building right
-    CreateEditorProp( $"mdl/desertlands/construction_bldg_wall_01.rmdl", <2371.21,-5208.07,40719.4>, <0,-90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <2291.46,-5205,40520>, <0,-90,0>, true, 8000, -1 )
+    CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <2283,-5205,40520>, <0,-90,0>, true, 8000, -1 )
     
 
 
