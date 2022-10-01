@@ -36,7 +36,7 @@
 * `V` Activate Prop Tool.
 * `T` Change perspective mode.
 * `F` Toggle noclip.
-* `G` Zipline (press X to unequip)
+* `G` Zipline (double tap X to unequip)
 * `MOUSE1` Place prop.
 * `E` Cycle to next prop.
 * `Q` Cycle to previous prop.
