@@ -21,9 +21,9 @@
         Replace `<map>` with the actual map's name.
 
         For example: 
-        
+
         ```
-        `bind F5 "changelevel mp_rr_desertlands_64k_x_64k"`
+        bind F5 "changelevel mp_rr_desertlands_64k_x_64k"
         ```
 
         You can also bind other keys to other map names as well.
