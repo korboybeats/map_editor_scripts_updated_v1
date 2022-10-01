@@ -143,7 +143,7 @@ void function EditorModePlace_Activation(entity player)
     RegisterConCommandTriggeredCallback( "+scriptCommand1", SwapToNextPitch )
     RegisterConCommandTriggeredCallback( "weapon_inspect", SwapToNextYaw )
     RegisterConCommandTriggeredCallback( "+offhand3", SwapToNextSnapSize )
-    RegisterConCommandTriggeredCallback( "+offhand4", ServerCallback_OpenModelMenu )
+    RegisterConCommandTriggeredCallback( "weaponSelectOrdnance", ServerCallback_OpenModelMenu )
 
     #elseif SERVER
 
@@ -202,7 +202,7 @@ void function EditorModePlace_Deactivation(entity player)
     DeregisterConCommandTriggeredCallback( "+scriptCommand1", SwapToNextPitch )
     DeregisterConCommandTriggeredCallback( "weapon_inspect", SwapToNextYaw ) 
     DeregisterConCommandTriggeredCallback( "+offhand3", SwapToNextSnapSize )
-    DeregisterConCommandTriggeredCallback( "+offhand4",  ServerCallback_OpenModelMenu )
+    DeregisterConCommandTriggeredCallback( "weaponSelectOrdnance",  ServerCallback_OpenModelMenu )
 
     AddActivatePropToolHint()
 
