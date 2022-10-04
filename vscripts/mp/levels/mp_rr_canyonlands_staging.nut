@@ -91,8 +91,11 @@ void function SpawnEditorProps()
     // Written by mostly fireproof. Let me know if there are any issues!
     printl("---- NEW EDITOR DATA ----")
 
-    //Bottom Platform
+    //////////////////////////
+    /// Long Box by Korboy ///
+    //////////////////////////
 
+        //Bottom Platform
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-3584,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-3840,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -135,7 +138,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
     
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-3584,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-3840,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -176,7 +178,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-12800,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-13056,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39488,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -221,7 +222,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39488,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-3584,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-3840,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -262,7 +262,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-12800,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-13056,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38976,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -307,7 +306,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38976,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-3584,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-3840,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -348,7 +346,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-12800,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-13056,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38464,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -393,7 +390,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38464,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-3584,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-3840,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -434,7 +430,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-12800,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-13056,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -479,7 +474,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37696,-3328,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37696,-3584,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37696,-3840,40031.6>, <0,90,0>, true, 8000, -1 )
@@ -521,8 +515,9 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37696,-13056,40031.6>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37696,-13312,40031.6>, <0,90,0>, true, 8000, -1 )
 
-    //Top Platform
 
+
+        //Top Platform
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-3328,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-3584,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-3840,41536>, <0,90,0>, true, 8000, -1 )
@@ -565,7 +560,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <40000,-13312,41536>, <0,90,0>, true, 8000, -1 )
     
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-3328,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-3584,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-3840,41536>, <0,90,0>, true, 8000, -1 )
@@ -606,7 +600,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-12800,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-13056,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39744,-13312,41536>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39488,-3328,41536>, <0,90,0>, true, 8000, -1 )
@@ -651,7 +644,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39488,-13312,41536>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-3328,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-3584,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-3840,41536>, <0,90,0>, true, 8000, -1 )
@@ -692,7 +684,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-12800,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-13056,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <39232,-13312,41536>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38976,-3328,41536>, <0,90,0>, true, 8000, -1 )
@@ -737,7 +728,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38976,-13312,41536>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-3328,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-3584,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-3840,41536>, <0,90,0>, true, 8000, -1 )
@@ -778,7 +768,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-12800,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-13056,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38720,-13312,41536>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38464,-3328,41536>, <0,90,0>, true, 8000, -1 )
@@ -823,7 +812,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38464,-13312,41536>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-3328,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-3584,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-3840,41536>, <0,90,0>, true, 8000, -1 )
@@ -866,7 +854,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <38208,-13312,41536>, <0,90,0>, true, 8000, -1 )
 
 
-
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-3328,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-3584,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-3840,41536>, <0,90,0>, true, 8000, -1 )
@@ -907,7 +894,6 @@ void function SpawnEditorProps()
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-12800,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-13056,41536>, <0,90,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37952,-13312,41536>, <0,90,0>, true, 8000, -1 )
-
 
 
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_ceiling_256x256_06.rmdl", <37696,-3328,41536>, <0,90,0>, true, 8000, -1 )
@@ -953,7 +939,7 @@ void function SpawnEditorProps()
 
 
 
-    //South wall
+        //South wall
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <40000,-13441,39999.7>, <0,0,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <39744,-13441,39999.7>, <0,0,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <39487.9,-13441,39999.8>, <0,0,0>, true, 8000, -1 )
@@ -1022,7 +1008,7 @@ void function SpawnEditorProps()
 
 
 
-    //North wall
+        //North wall
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <40000,-3199.12,39999.7>, <0,0,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <39744,-3199.12,39999.7>, <0,0,0>, true, 8000, -1 )
     CreateEditorProp( $"mdl/thunderdome/thunderdome_cage_wall_256x256_01.rmdl", <39487.9,-3199.12,39999.8>, <0,0,0>, true, 8000, -1 )
