@@ -40,9 +40,10 @@ struct {
 
 void function EditorModeToys_Activation(entity player)
 {
-    AddInputHint( "%scriptCommand3%", "Change Editor Mode" )
+    AddInputHint( "%B%", "Change Editor Mode" )
     AddInputHint( "%T%", "Change Perspective" )
-    AddInputHint( "%noclip%", "NoClip")
+    AddInputHint( "%F%", "NoClip")
+    AddInputHint( "%G%", "Zipline")
 
     #if CLIENT
     foreach( rui in startEditorRUIs )
