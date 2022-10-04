@@ -51,9 +51,10 @@ void function EditorModeDelete_Activation(entity player)
     startEditorRUIs.clear()
     #endif
 
-    AddInputHint( "%scriptCommand3%", "Change Editor Mode" )
+    AddInputHint( "%B%", "Change Editor Mode" )
     AddInputHint( "%T%", "Change Perspective" )
-    AddInputHint( "%noclip%", "NoClip")
+    AddInputHint( "%F%", "NoClip")
+    AddInputHint( "%G%", "Zipline")
     AddInputHint( "", "")
     AddInputHint( "%attack%", "Delete Prop" )
 
