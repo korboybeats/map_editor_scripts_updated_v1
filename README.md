@@ -1,6 +1,6 @@
 # Fireproof's Map Editor Tool updated by Korboy
 
-![Alt text](https://i.imgur.com/Ib3E6qz.png "Optional title")
+!(https://i.imgur.com/Ib3E6qz.png)
 
 
 ### Getting started:
