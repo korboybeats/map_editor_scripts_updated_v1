@@ -11,7 +11,7 @@
     ```
     and make a backup of your `settings.cfg` file.
 3. Launch game in dev mode.
-4. Enter this bind command in console:
+4. Press ` key to open the console then enter this bind command:
 
     ```
         bind X "loadouts_devset character_selection character_pathfinder; ToggleThirdPerson; ToggleHUD; give mp_weapon_editor"; bind V "+offhand1"; bind T "ToggleThirdPerson"; bind F "noclip"; bind Q "+reload"; bind E "+use"; bind 3 "weapon_inspect"; bind 4 "+scriptCommand1"; bind 5 "+scriptCommand6"; bind R "+pushtotalk"; bind 6 "+offhand3"; bind Z "weaponSelectOrdnance"; bind G "+offhand4"
